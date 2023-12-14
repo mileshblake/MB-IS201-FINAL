@@ -1,0 +1,159 @@
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally in the container */
+    align-items: flex-start; /* Align items to the top */
+    padding: 30px 50px 20px; /* Adjust padding as needed */
+    margin-bottom: 150px;
+    padding-bottom: 150px
+}
+
+.about-me img {
+    max-width: 400px; /* Set max width for the image */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-me .about-me-text {
+    max-width: calc(100% - 420px); /* Adjust the max-width to give more space to the text */
+    padding-left: 20px; /* Add some space between the image and the text */
+}
+
+/* Optional: Adjust the layout on larger screens to make the section wider */
+@media (min-width: 768px) {
+    .about-me {
+        max-width: 1600px; /* Adjust the width of the section as needed */
+        margin: auto; /* Center the section in the parent container */
+    }
+}
+
+
+.bottom-section {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+    gap: 20px; /* This will create some space between the two divs */
+}
+
+.my-work,
+.tableau {
+    flex: 1; /* This will allow both divs to grow and take up equal space in the container */
+    max-width: calc(50% - 10px); /* Adjust max-width to account for the gap */
+}
+
+@media (max-width: 768px) { /* Adjust this value as needed for your responsive breakpoint */
+    .my-work,
+    .tableau {
+        max-width: 100%; /* On smaller screens, each div takes full width */
+    }
+}
+
+
+
+img {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2); /* Example shadow */
+    border-radius: 0.25rem; /* This should match the border-radius applied by the 'rounded' class */
+    max-width: 400px;
+
+}
+
+.about-me-text {
+    padding-top: 20px;
+    display: block;
+    padding-left: 40px;
+}
+
+h1 {
+    font-size: 60px
+}
+
+ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 23px;
+}
+
+p {
+    font-size: 23px;
+    padding-right: 40px;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content-wrap {
+    flex: 1;
+}
+
+.tableau {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+.tableauPlaceholder {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width to prevent it from becoming too large */
+    height: auto; /* Let the height adjust automatically */
+  }
+
+.footer {
+    background-color: #333; /* Or any other color */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    float: inline-end;
+}
+
+
+@media (max-width: 767px) { /* Adjust the pixel value based on your design needs */
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me img {
+        max-width: 90%; /* Make image responsive and slightly smaller for mobile */
+        padding: 0; /* Remove padding or adjust as needed for mobile */
+    }
+
+    .about-me-text {
+        padding: 20px;
+        width: 100%; /* Full width for mobile */
+        padding-left: 0; /* Remove padding for mobile */
+        padding-right: 0; /* Remove padding for mobile */
+    }
+}
+
+.my-work h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.content-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: row; /* Stack the iframes horizontally */
+    margin-top: 0;
+}
+
+iframe {
+    margin: 15px; /* Increased margin to add space between the iframes */
+}
