@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    background: #ccc; /* Light gray background as a placeholder */
+}
+
+.resume {
+    max-width: 75%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section h2 {
+    font-size: 20px;
+    padding: 3px 6px;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    padding: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* ... existing styles ... */
+
+/* Style for job titles within the sections */
+section strong {
+    display: block; /* Makes the strong tag appear on its own line without extra space */
+}
+
+/* Paragraph styles within sections to remove top margin */
+section p {
+    margin-top: 0;
+    padding: 10px;
+}
+
+/* List styles within sections to connect with the paragraph above */
+section ul {
+    margin-top: -10px; /* Negative margin to pull the list up to connect with the paragraph */
+    padding: 0 10px 10px 10px;
+}
+
+/* List item styles */
+section li {
+    padding-left: 10px; /* Aligns text with the paragraph content */
+    margin-bottom: 5px; /* Adjust spacing between list items if needed */
+}
+
+.job-entry {
+    margin-bottom: 20px; /* Adds space between each job entry */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.job-title-duration,
+.job-company-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.job-title-duration {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.job-company-location {
+    font-style: italic;
+    margin-bottom: 10px; /* Added space between the company/location and the list */
+}
+
+.job-title,
+.job-company {
+    text-align: left;
+    flex: 1;
+}
+
+.job-duration,
+.job-location {
+    text-align: right;
+    flex: 1;
+}
+
+.job-description {
+    list-style-type: disc;
+    padding-left: 20px; /* Align this with the start of the job-company text as needed */
+    margin-top: 10px; /* Adds space above the list, adjust as needed */
+    margin-bottom: 0; /* Remove default margin-bottom */
+}
+
+.job-description li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.skills-achievements {
+    margin-bottom: 20px; /* Adds space between this section and others */
+}
+
+.skills-achievements h2 {
+    /* Your styles for the section heading here, if necessary */
+}
+
+.skills-achievements ul {
+    list-style-type: disc; /* Maintains the bullet points */
+    padding-left: 20px; /* Adds indentation to the list */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Adds the box shadow to the entire list */
+    margin: 10px; /* Adds top and bottom margin to the list */
+    margin-bottom: 0;
+}
+
+/* Remove the bottom margin for the last item to avoid extra space */
+.skills-achievements li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
